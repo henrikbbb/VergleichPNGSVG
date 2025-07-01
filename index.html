@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>PNG vs SVG Vergleich</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      overflow-x: auto; /* falls zu breit bei großem Zoom */
+      text-align: center; /* <-- Hier */
+    }
+
+    .image-container {
+      display: inline-block;
+      white-space: nowrap; /* verhindert Umbruch */
+    }
+
+    .image-wrapper {
+      display: inline-block;
+      margin-right: 2rem;
+      text-align: center;
+    }
+
+    img {
+      /* keine Größenbegrenzung, Bild bleibt in Originalgröße */
+      border: 1px solid #ccc;
+      display: block;
+    }
+
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">PNG vs SVG Vergleich</h1>
+  <div class="image-container">
+    <div class="image-wrapper">
+      <h2>PNG-Bild</h2>
+      <img src="bild.png" alt="PNG Beispiel">
+    </div>
+    <div class="image-wrapper">
+      <h2>SVG-Bild</h2>
+      <img src="bild.svg" alt="SVG Beispiel">
+    </div>
+  </div>
+</body>
+</html>
